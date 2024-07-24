@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon -w '../src/**/*.ts' -e .ts -x vite"
+  },
+  "dependencies": {
+    "magic-string-ast": "^0.6.2",
+    "vue": "^3.4.33"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.24.9",
+    "vite": "^5.0.4",
+    "vite-plugin-inspect": "^0.8.1"
+  }
+}

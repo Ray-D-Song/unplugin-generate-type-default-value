@@ -1,0 +1,1 @@
+declare function $d<T>(): T
