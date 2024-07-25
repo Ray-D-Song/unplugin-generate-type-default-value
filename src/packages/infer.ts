@@ -21,7 +21,6 @@ function inferValue<T extends TypeCollection>(type: T, members: Members<T>, cust
     })
     return object2Str(merge(obj, custom))
   }
-  console.log('type', type)
 
   switch (type) {
     case 'TSStringKeyword':

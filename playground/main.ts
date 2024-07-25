@@ -1,12 +1,18 @@
-const val = $d<{
-  a: string
-  b: number
-  c: {
-    dev: number
-    fun: Function
-  }
-}>()
+import type { Man } from './types'
 
-console.log(val.c.fun)
+// const val = $d<{
+//   a: string
+//   b: number
+//   c: {
+//     dev: number
+//     fun: Function
+//   }
+// }>()
 
-document.getElementById('app')!.innerHTML = JSON.stringify(val)
+const man = $d<Man>()
+
+console.log(`man: `, man)
+
+// console.log(val.c.fun)
+
+document.getElementById('app')!.innerHTML = JSON.stringify('bro')

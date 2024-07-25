@@ -17,13 +17,58 @@ interface Options {
 	 */
 	exclude: string[]
 
+  framework: Record<string, boolean>
+
   /**
-   * vue options
-   * @default { ref: true, reactive: true }
+   * generated default value
+   * pass in string like `0` `''` `false` `null` `undefined` `{}`
    */
-  vue: {
-    ref: boolean
-    reactive: boolean
+  values: {
+    /**
+     * @default `true`
+     */
+    boolean: string
+
+    /**
+     * @default `0`
+     */
+    number: string
+
+    /**
+     * @default `''`
+     */
+    string: string
+
+    /**
+     * @default `null`
+     */
+    null: string
+
+    /**
+     * @default `undefined`
+     */
+    undefined: string
+
+    /**
+     * @default `{}`
+     */
+    any: string
+
+    /**
+     * @default `0n`
+     */
+    bigint: string
+
+    /**
+     * @default `[]`
+     */
+    array: string
+
+    /**
+     * `TSObjectKeyword`
+     * @default `{}`
+     */
+    object: string
   }
 }
 
